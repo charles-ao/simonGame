@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+#titleHead {
+    background-color: black;
+    font-family: 'Solway', serif;
+    color: white;
+    padding: 5% 0;
+    border-radius: 2px 2px 2px 2px;
+}
+
+#level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 5%;
+    color: black;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.Help {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border: solid #000000 1px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.Help:hover {
+    background: #85898F;
+    border: solid #D7D7D7 1px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    text-decoration: none;
+}
