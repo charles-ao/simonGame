@@ -13,7 +13,7 @@ body {
 
 #level-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: 5%;
     color: black;
 }
@@ -65,9 +65,9 @@ body {
     border-radius: 0px;
     color: #000000;
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 200;
-    padding: 5px;
+    padding: 10px;
     margin: 0px 10px;
     background-color: #FFFFFF;
     border: solid #000000 1px;
@@ -91,9 +91,9 @@ body {
     border-radius: 0px;
     color: #FFFFFF;
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 200;
-    padding: 5px;
+    padding: 10px;
     margin: 0px 10px;
     background-color: #000000;
     border: solid #000000 1px;

@@ -1,23 +1,34 @@
 var yourName = prompt("What is your name?");
+
 var firstLetter = yourName.slice(0, 1);
 var upperFirstLetter = firstLetter.toUpperCase();
 var restLetter = yourName.slice(1, yourName.length);
 var lowerRestLetter = restLetter.toLowerCase();
+console.log(upperFirstLetter + lowerRestLetter);
 myFunction();
+
 
 function myFunction() {
     document.getElementById("welcomeSpeech").innerHTML = "Welcome " + upperFirstLetter + lowerRestLetter + "!";
 }
 
-
 $(".Help").on("click", function() {
-    $(helpFunction).fadeToggle();
+    helpFunction();
 })
 
-function helpFunction() {
-    document.getElementById("help").innerHTML = "The game shows the first colour in the sequence e.g Red. The Player clicks on the Red button. Next, the game shows the next colour e.g Blue, the player has to remember the sequence is red, blue and so you click red then blue. Next, the game shows another color e.g green, then the sequence you should click is red, blue, green. and so on till you're not capable of remembering the sequence. C'mon! let's see how retentive you are!";
-}
+// $(".Help").on("click", function() {
+//     $(helpFunction).fadeIn();
+//     $(helpFunction).fadeOut();
+// })
 
+
+// function helpFunction() {
+//     document.getElementById("help").innerHTML = "The game shows the first colour in the sequence e.g Red. The Player clicks on the Red button. Next, the game shows the next colour e.g Blue, the player has to remember the sequence is red, blue and so you click red then blue. Next, the game shows another color e.g green, then the sequence you should click is red, blue, green. and so on till you're not capable of remembering the sequence. C'mon! let's see how retentive you are!";
+// }
+
+function helpFunction() {
+    window.alert("The game shows the first colour in the sequence e.g Red. The Player clicks on the Red button. Next, the game shows the next colour e.g Blue, the player has to remember the sequence is red, blue and so you click red then blue. Next, the game shows another color e.g green, then the sequence you should click is red, blue, green. and so on till you're not capable of remembering the sequence. C'mon! let's see how retentive you are!")
+}
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
@@ -52,13 +63,14 @@ function checkAnswer(currentLevel) {
         if (userClickedPattern.length === gamePattern.length) {
             setTimeout(function() {
                 nextSequence();
+
             }, 1000);
         }
     } else {
+        console.log(level) //Shows the highscore or level the player stopped. 
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Click Start to Restart");
-
+        $("#level-title").text("Game Over! Your Score is '" + level + "'. Click Start to Restart");
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
