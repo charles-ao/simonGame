@@ -71,11 +71,36 @@ body {
     background-color: #FFFFFF;
     border: solid #000000 1px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     cursor: pointer;
 }
 
 .Help:hover {
+    background: #85898F;
+    border: solid #D7D7D7 1px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+.Start {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 5px;
+    background-color: #000000;
+    border: solid #000000 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Start:hover {
     background: #85898F;
     border: solid #D7D7D7 1px;
     -webkit-border-radius: 0px;
